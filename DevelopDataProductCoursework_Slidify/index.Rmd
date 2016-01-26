@@ -1,0 +1,50 @@
+---
+title       : Developing Data Products 
+subtitle    : Slidify presentation
+author      : Sergey Chigrinov
+job         : January, 2016
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Motor Trend Car Road Test Explorer
+
+The data is part of the R datasets
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+
+The app can be found here: https://schigrinov.shinyapps.io/DevelopDataProductCoursework/
+Code can be found on github: https://github.com/schigrinov/DevelopDataProductCoursework
+
+## Application description
+
+On the main tab, called Explore the Data, application visualises the mtcars dataset. The graph on the Visualization page shows scatterplot for fuel consumption for different cars in the dataset. Data window shows the tabular data. You can filter the data by two parameters - number of cilinders and gross horsepower using slider inputs on the left side.
+
+
+--- .class #id 
+
+## Raw data
+
+See the top raws of the raw data: 
+
+```{r}
+data("mtcars")
+head(mtcars)
+
+```
+
+---
+## Visualization
+```{r}
+suppressWarnings(library(ggplot2));mtcars$am<-factor(mtcars$am);levels(mtcars$am)<-c("Automatic","Manuual")
+ggplot(mtcars, aes(am, mpg)) + geom_boxplot() + ggtitle("Miles per galon by transmission type")
+```
+
+---
+
+## Thanks for your attention! 
+## Hope to get a good mark from you!
+

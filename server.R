@@ -4,9 +4,7 @@ library(UsingR)
 library(MASS)
 #library(ggplot2)
 # library(rCharts)
-# 
-# library(DT)
-# library(BH)
+
 
 
 data("mtcars")

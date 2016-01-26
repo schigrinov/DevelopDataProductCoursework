@@ -1,10 +1,8 @@
 library(shiny)
-# library(BH)
-library(rCharts)
+
 require(markdown)
 require(data.table)
 library(dplyr)
-# library(DT)
 
 library(googleCharts)
 # library(googleVis)
@@ -78,6 +76,8 @@ shinyUI(
                             h5("The data was extracted from the 1974 Motor Trend US magazine, and comprises"),
                             h5("fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models)."), 
                             h5(),
+                            h5("You can fing the source code here:"),
+                            h4("https://github.com/schigrinov/DevelopDataProductCoursework"),
                             h5(),
                             h5("Author - Sergey Chigrinov"),
                             h5("January 2016")
