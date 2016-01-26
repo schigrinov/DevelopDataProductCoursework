@@ -3,6 +3,5 @@ account: rpubs
 server: rpubs.com
 bundleId:
         https://api.rpubs.com/api/v1/document/146966/d992675fb9a6431c956f2ef3fff48f0a
-url:
-        http://rpubs.com/publish/claim/146966/e4e1b96697734b3d9e46a1815e1c844b
-when: 1453781874.43963
+url: http://rpubs.com/schigrinov/146966
+when: 1453782736.42904
